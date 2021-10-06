@@ -1,0 +1,425 @@
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~
+$ pwd
+/c/Users/local
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~
+$ mkdir bazy_grupa_3
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~
+$ ls
+ AppData/
+ bazy_grupa_3/
+ bazyg5/
+'Biblioteka calibre'/
+'Calibre Library'/
+ cinderella2-user.properties
+'Cisco Packet Tracer 7.1.1'/
+ Contacts/
+ Cookies@
+'Dane aplikacji'@
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ game-of-life.sce
+ Links/
+ lorenz.sce
+'Menu Start'@
+ mercurial.ini
+'Moje dokumenty'@
+ Music/
+ NetHood@
+ NTUSER.DAT
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TM.blf
+ NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMContainer000000000000000                                                           00001.regtrans-ms
+ NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMContainer000000000000000                                                           00002.regtrans-ms
+ ntuser.ini
+ ntuser.pol
+ OneDrive/
+ Pictures/
+ PrintHood@
+ Recent@
+ repo/
+'Saved Games'/
+ Searches/
+ SendTo@
+ source/
+ Szablony@
+'Ustawienia lokalne'@
+ Videos/
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~
+$ cd bazy_grupa_3/
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3
+$ pwd
+/c/Users/local/bazy_grupa_3
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3
+$ git init
+Initialized empty Git repository in C:/Users/local/bazy_grupa_3/.git/
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3 (master)
+$ ls
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3 (master)
+$ cd ..
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~
+$ cd bazy_grupa_3/
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3 (master)
+$ echo elo
+elo
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3 (master)
+$ echo elo > plik.txt
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3 (master)
+$ ls
+plik.txt
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3 (master)
+$ cat plik.txt
+elo
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        plik.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3 (master)
+$ git add plik.txt
+warning: LF will be replaced by CRLF in plik.txt.
+The file will have its original line endings in your working directory
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   plik.txt
+
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3 (master)
+$ git commit -m "pierwszy commit"
+[master (root-commit) 03f356b] pierwszy commit
+ Committer: xD <local@WMII-EBI4U62M34.wmii.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 plik.txt
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3 (master)
+$ git config --local -l
+
+
+
+
+ls
+
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3 (master)
+$
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3 (master)
+$
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3 (master)
+$
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3 (master)
+$
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3 (master)
+$ ls
+plik.txt
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3 (master)
+$ git config --global -l
+credential.helper=manager
+core.autocrlf=true
+core.excludesfile=C:\Users\local\Documents\gitignore_global.txt
+user.name=xD
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3 (master)
+$ git config --local user.name 123
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3 (master)
+$ git config --local user.email 123@gmail.com
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3 (master)
+$ git config --local -l
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+user.name=123
+user.email=123@gmail.com
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3 (master)
+$ ls
+plik.txt
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3 (master)
+$ git config --local -l
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+user.name=123
+user.email=123@gmail.com
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3 (master)
+$ git commit -m "pierwszy commit"
+On branch master
+nothing to commit, working tree clean
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3 (master)
+$ git log
+
+commit 03f356b8bacc8e4cf59dc5d8b72324616154d546 (HEAD -> master)
+Author: xD <local@WMII-EBI4U62M34.wmii.local>
+Date:   Wed Oct 6 14:58:30 2021 +0200
+
+    pierwszy commit
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3 (master)
+$
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3 (master)
+$ git branch dev
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3 (master)
+$ git checkout dev
+Switched to branch 'dev'
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3 (dev)
+$ git log
+commit 03f356b8bacc8e4cf59dc5d8b72324616154d546 (HEAD -> dev, master)
+Author: xD <local@WMII-EBI4U62M34.wmii.local>
+Date:   Wed Oct 6 14:58:30 2021 +0200
+
+    pierwszy commit
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3 (dev)
+$ cat plik.txt
+elo
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3 (dev)
+$ echo "grupa 3" >> plik.txt
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3 (dev)
+$ cat plik.txt
+elo
+grupa 3
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3 (dev)
+$ git status
+On branch dev
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   plik.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3 (dev)
+$ git add plik.txt
+warning: LF will be replaced by CRLF in plik.txt.
+The file will have its original line endings in your working directory
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3 (dev)
+$ git status
+On branch dev
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   plik.txt
+
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3 (dev)
+$ git commit -m "modyfikacja pliku"
+[dev ca44b11] modyfikacja pliku
+ 1 file changed, 1 insertion(+)
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3 (dev)
+$ git checkout master
+Switched to branch 'master'
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3 (master)
+$ git checkout dev
+Switched to branch 'dev'
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3 (dev)
+$ git checkout master
+Switched to branch 'master'
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3 (master)
+$ git merge dev
+Updating 03f356b..ca44b11
+Fast-forward
+ plik.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3 (master)
+$ git log
+commit ca44b11497f1330ae6e9d968c4db58686dc4be4f (HEAD -> master, dev)
+Author: 123 <123@gmail.com>
+Date:   Wed Oct 6 15:14:17 2021 +0200
+
+    modyfikacja pliku
+
+commit 03f356b8bacc8e4cf59dc5d8b72324616154d546
+Author: xD <local@WMII-EBI4U62M34.wmii.local>
+Date:   Wed Oct 6 14:58:30 2021 +0200
+
+    pierwszy commit
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_grupa_3 (master)
+$ cd ..
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~
+$ git clone https://github.com/Kryks/bazy_danych_grupa_3.git
+Cloning into 'bazy_danych_grupa_3'...
+fatal: protocol 'https' is not supported
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~
+$ cd bazy_dancyh_grupa_3
+bash: cd: bazy_dancyh_grupa_3: No such file or directory
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~
+$ git clone https://github.com/Kryks/bazy_danych_grupa_3.git
+Cloning into 'bazy_danych_grupa_3'...
+fatal: protocol 'https' is not supported
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~
+$ git clone git@github.com:Kryks/bazy_danych_grupa_3.git
+Cloning into 'bazy_danych_grupa_3'...
+The authenticity of host 'github.com (140.82.121.3)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)? no
+Please type 'yes' or 'no': no
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~
+$ git clone https://github.com/Kryks/bazy_danych_grupa_3.git
+Cloning into 'bazy_danych_grupa_3'...
+warning: You appear to have cloned an empty repository.
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~
+$ cd bazy_danych_grupa_3/
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_danych_grupa_3 (master)
+$ ls
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_danych_grupa_3 (master)
+$ echo "#Bazy danych grupa 3" > readme.md
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_danych_grupa_3 (master)
+$ ls
+readme.md
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_danych_grupa_3 (master)
+$ git add readme.md
+warning: LF will be replaced by CRLF in readme.md.
+The file will have its original line endings in your working directory
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_danych_grupa_3 (master)
+$ git commit -m "dodanie readme"
+[master (root-commit) b23455b] dodanie readme
+ Committer: xD <local@WMII-EBI4U62M34.wmii.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 readme.md
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_danych_grupa_3 (master)
+$ git config --local -l
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+remote.origin.url=https://github.com/Kryks/bazy_danych_grupa_3.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.master.remote=origin
+branch.master.merge=refs/heads/master
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_danych_grupa_3 (master)
+$ git status
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+nothing to commit, working tree clean
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_danych_grupa_3 (master)
+$ git push origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_danych_grupa_3 (master)
+$ git push origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': Kryks
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 244 bytes | 244.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/Kryks/bazy_danych_grupa_3.git
+ * [new branch]      master -> master
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_danych_grupa_3 (master)
+$ ^C
+
+WMII-EBI4U62M34+local@WMII-EBI4U62M34 MINGW64 ~/bazy_danych_grupa_3 (master)
+$
