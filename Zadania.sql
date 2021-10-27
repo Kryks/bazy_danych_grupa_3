@@ -63,4 +63,25 @@ id_konsumenta int,
  #zadanie 4.2
  INSERT INTO  przetwory(id_wykonawcy,zawartosc,id_konsumenta) VALUES
     (1,'bigos z papryczka chilli',3);
+    
+ #zadanie 5.1
+INSERT INTO postac(nazwa,rodzaj, data_ur,wiek) VALUES
+('Bigosobrody','wiking','1652-05-02', 31),
+('Lugos','wiking','1650-02-02', 32),
+('Udalryk','wiking','1640-01-02', 38),
+('Ragnar','wiking','1642-03-02', 32),
+('Bran','wiking','1648-08-02', 36)
+;
+
+#zadanie 5.2
+CREATE TABLE statek
+(nazwa_statku int auto_increment primary key, 
+rodzaj_statku enum(),
+data_wodowania INT(4) DEFAULT 1654, 
+zawartosc varchar(255),
+dodatek varchar(200) DEFAULT 'papryczka chilli',
+id_konsumenta int,
+ FOREIGN KEY (id_wykonawcy) REFERENCES postac(id_postaci) ,
+ FOREIGN KEY (id_konsumenta) REFERENCES postac(id_postaci));
+
   
