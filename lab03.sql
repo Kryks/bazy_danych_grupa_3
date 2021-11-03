@@ -75,13 +75,41 @@ INSERT INTO postac(nazwa,rodzaj, data_ur,wiek) VALUES
 
 #zadanie 5.2
 CREATE TABLE statek
-(nazwa_statku int auto_increment primary key, 
-rodzaj_statku enum(),
+(nazwa_statku varchar(255) primary key, 
+rodzaj_statku enum("duzy","sredni","maly"),
 data_wodowania INT(4) DEFAULT 1654, 
-zawartosc varchar(255),
-dodatek varchar(200) DEFAULT 'papryczka chilli',
-id_konsumenta int,
- FOREIGN KEY (id_wykonawcy) REFERENCES postac(id_postaci) ,
- FOREIGN KEY (id_konsumenta) REFERENCES postac(id_postaci));
+max_ladownosc int unsigned);
 
-  
+
+#zadanie 5.3
+INSERT INTO statek(nazwa_statku,rodzaj_statku,max_ladownosc) VALUES
+('Maria','duzy',100),
+('Ewa','sredni',50);
+
+#zadanie 5.4
+ALTER TABLE postac ADD COLUMN funkcja varchar(50);
+
+#zadanie 5.5
+UPDATE postac SET funkcja='kapitan' WHERE nazwa='Bjorn';
+
+#zadanie 5.6
+#krok1
+ALTER TABLE postac ADD COLUMN nazwa_statku varchar(255);
+
+#krok2
+Alter table postac add FOREIGN KEY (nazwa_statku) REFERENCES statek(nazwa_statku);
+
+#zadanie 5.7
+UPDATE postac SET nazwa_statku='Maria' WHERE nazwa='Bigosobrody' OR nazwa='Lugos' OR nazwa='Udalryk' OR nazwa='Bjorn' OR nazwa='Bran';
+
+UPDATE postac SET nazwa_statku='Ewa' WHERE nazwa='Tesciowa' OR nazwa='Ragnar' OR nazwa='Drozd';
+
+#inny sposob
+
+update postac set statek='Maria' where id_postaci in (1,2,3,4,5);
+
+#zadanie 5.8
+DELETE FROM izba WHERE nazwa_izby='spizarnia';
+
+#zadanie 5.9
+DROP TABLE izba;
