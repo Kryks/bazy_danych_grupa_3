@@ -63,6 +63,7 @@ select concat('Ala' , ' ' ,'ma' ,' ', 'kota');
 select concat('Zasob ' , nazwa , 'zostal pozyskany w miesiacu o numerze',month(datapozyskania)) from zasob;
 select concat('Zasob ' , nazwa , 'zostal pozyskany w miesiacu o numerze',month(datapozyskania)) as tekst from zasob;
 
+select concat('w postaci :' , nazwa ,'-', rodzaj) from kreatura;
 
 #zadanie 4.2
 
