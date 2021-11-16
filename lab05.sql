@@ -56,17 +56,32 @@ SELECT rodzaj from kreatura;
 SELECT DISTINCT rodzaj from kreatura;
 SELECT DISTINCT (rodzaj) from kreatura;
 
-#zadanie 4.2
+
+
+metoda concat(kolumna , 'tekst' , funkcja())
 
 select concat('Ala' , ' ' ,'ma' ,' ', 'kota');
 
 select concat('Zasob ' , nazwa , 'zostal pozyskany w miesiacu o numerze',month(datapozyskania)) from zasob;
 select concat('Zasob ' , nazwa , 'zostal pozyskany w miesiacu o numerze',month(datapozyskania)) as tekst from zasob;
 
-select concat('w postaci :' , nazwa ,'-', rodzaj) from kreatura;
+select concat('w postaci :' , nazwa ,'-', rodzaj) from kreatura WHERE rodzaj LIKE 'wi%';
+#złącza łancuchy znaków w jeden łańcuch 
 
 #zadanie 4.2
 
-#złącza łancuchy znaków w jeden łańcuch 
+select concat('w postaci :' , nazwa ,'-', rodzaj) from kreatura WHERE rodzaj LIKE 'wi%';
 
-metoda concat(kolumna , 'tekst' , funkcja())
+#zadanie 4.3
+
+select concat('calkowita waga: ',ilosc*waga) from zasob WHERE dataPozyskania BETWEEN '2000-01-01'  AND '2007-12-31';
+
+#zadanie 5.1
+
+select concat('jedzenie netto: ', waga*0.70 , ' odpady: ' , waga*0.30) from zasob WHERE rodzaj='jedzenie';
+
+#zadanie 5.2
+select * from zasob WHERE rodzaj IS NULL;
+
+#zadanie 5.3
+SELECT DISTINCT rodzaj from zasob  WHERE nazwa LIKE 'Ba%' or nazwa LIKE '%os';
