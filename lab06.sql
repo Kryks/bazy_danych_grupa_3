@@ -8,6 +8,6 @@ SELECT avg(waga) from kreatura where rodzaj='wiking';
 SELECT rodzaj,AVG(waga) from kreatura GROUP BY rodzaj;
 
 #zadanie 1.3
-SELECT rodzaj,AVG(waga) from kreatura GROUP BY rodzaj;
 
+select (1700-Year(dataUr)) as wiek from kreatura;
 #zadanie 1.4
