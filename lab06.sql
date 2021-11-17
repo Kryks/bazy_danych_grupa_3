@@ -56,7 +56,18 @@ LEFT JOIN ekwipunek e ON k.idKreatury=e.idKreatury
 
 czasami po prawej moga być nule
 
+#zadanie 3.3
+
 #left join
 select k.nazwa, k.idKreatury ,e.idKreatury from kreatura k 
 LEFT JOIN ekwipunek e ON k.idKreatury=e.idKreatury
 where e.idKreatury is NULL;
+
+# podzapytanie
+select idKreatury from kreatura where idKreatury not in
+(select distinct idKreatury from ekwipunek
+where idKreatury is not NULL);
+
+
+select * from kreatura k1, kreatura k2 
+where k1.IdKreatury=k2.idKreatury;
