@@ -71,3 +71,51 @@ where idKreatury is not NULL);
 
 select * from kreatura k1, kreatura k2 
 where k1.IdKreatury=k2.idKreatury;
+
+
+#zad4.1
+
+
+
+
+#zad4.2
+
+select * from kreatura k
+inner join ekwipunek e on k.idKreatury=e.idKreatury
+inner join zasob z on e.idZasobu=z.idZasobu
+where z.rodzaj='jedzenie' order by k.dataUr desc limit 5;
+
+
+#zad4.3
+select nazwa , idKreatury,nazwa,idKreatury from kreatura;
+
+select k1.nazwa,k2.nazwa from kreatura k1
+inner join kreatura k2 on k2.idKreatury-k1.idKreatury=5;
+
+
+#zad5.1
+
+select avg(e.ilosc*z.waga),sum(e.ilosc),k.rodzaj from kreatura k
+inner join ekwipunek e on k.idKreatury=e.idKreatury
+inner join zasob z on e.idZasobu=z.idZasobu
+where k.rodzaj not in ('malpa','waz') and e.ilosc<30
+group by k.rodzaj;
+
+policzy przed sortowaniem  bo dalismy w where
+
+select avg(e.ilosc*z.waga),sum(e.ilosc),k.rodzaj from kreatura k
+inner join ekwipunek e on k.idKreatury=e.idKreatury
+inner join zasob z on e.idZasobu=z.idZasobu
+where k.rodzaj not in ('malpa','waz') 
+group by k.rodzaj having sum(e.ilosc)<30;
+
+policzy po sortowaniu bo w having mamy
+
+#zad5.2
+select * from kreatura k,
+(select rodzaj ,min(dataUr) as min, max(dataUr) as max from kreatura
+group by rodzaj) as pod
+where k.dataUr=pod.min or k.dataUr=pod.max 
+and k.rodzaj=pod.rodzaj;
+
+
