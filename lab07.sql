@@ -117,3 +117,23 @@ select * from kreatura k,
 group by rodzaj) as pod
 where k.dataUr=pod.min or k.dataUr=pod.max 
 and k.rodzaj=pod.rodzaj;
+
+
+#lab07
+#zad1.2
+select * from kreatura k
+left join uczestnicy u on k.idKreatury=u.id_uczestnika
+where u.id_uczestnika is null;
+
+select distinct id_uczestnika from uczestnicy;
+
+select nazwa from kreatura where idKreatury not in
+ (select distinct id_uczestnika from uczestnicy);
+ 
+ 
+select u.id_uczestnika,k.idKreatury from uczestnicy u 
+right join kreatura k on u.id_uczestnika=k.idKreatury
+where u.id_uczestnika is null;
+
+#zad1.3
+
