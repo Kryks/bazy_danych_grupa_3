@@ -146,3 +146,9 @@ inner join uczestnicy u on w.id_wyprawy=u.id_wyprawy
 inner join ekwipunek e on u.id_uczestnika=e.idKreatury
 inner join zasob z on e.idZasobu=z.idZasobu
 group by w.id_wyprawy;
+
+select w.nazwa,sum(e.ilosc) , group_concat(z.nazwa,'->',e.ilosc) from wyprawa w
+inner join uczestnicy u on w.id_wyprawy=u.id_wyprawy
+inner join ekwipunek e on u.id_uczestnika=e.idKreatury
+inner join zasob z on e.idZasobu=z.idZasobu
+group by w.id_wyprawy,z.nazwa;
