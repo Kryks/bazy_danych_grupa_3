@@ -152,3 +152,20 @@ inner join uczestnicy u on w.id_wyprawy=u.id_wyprawy
 inner join ekwipunek e on u.id_uczestnika=e.idKreatury
 inner join zasob z on e.idZasobu=z.idZasobu
 group by w.id_wyprawy,z.nazwa;
+
+#zad2.1
+
+select w.nazwa,count(u.id_uczestnika),group_concat(k.nazwa) from wyprawa w
+inner join uczestnicy u on w.id_wyprawy=u.id_wyprawy
+inner join kreatura k on u.id_uczestnika=k.idKreatury
+group by w.id_wyprawy;
+
+#zad2.2
+select kolejnosc,data_rozpoczecia,s.nazwa,w.kierownik,k.nazwa from etapy_wyprawy e
+inner join wyprawa w on e.idWyprawy=w.id_wyprawy
+inner join sektor s on e.sektor=s.id_sektora
+inner join kreatura k on w.kierownik=k.idKreatury
+group by e.idEtapu
+order by data_rozpoczecia , kolejnosc;
+
+
