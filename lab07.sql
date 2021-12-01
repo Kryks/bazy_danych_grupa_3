@@ -168,4 +168,24 @@ inner join kreatura k on w.kierownik=k.idKreatury
 group by e.idEtapu
 order by data_rozpoczecia , kolejnosc;
 
+#3.1
+select s.nazwa ,
+if(count(ew.sektor) is null,0,count(ew.sektor))
+from sektor s
+left join etapy_wyprawy ew on s.id_sektora=ew.sektor
+group by s.id_sektora;
+#4.1
+select w.nazwa,sum(length(dziennik)) as liczenie from etapy_wyprawy e
+inner join wyprawa w on e.idWyprawy=w.id_wyprawy
+inner join sektor s on e.sektor=s.id_sektora
+group by w.id_wyprawy
+having sum(length(dziennik))<400;
+
+select w.nazwa,sum(length(dziennik)) as liczenie from etapy_wyprawy e
+inner join wyprawa w on e.idWyprawy=w.id_wyprawy
+inner join sektor s on e.sektor=s.id_sektora
+group by w.id_wyprawy
+having liczenie<400;
+
+
 
