@@ -187,5 +187,18 @@ inner join sektor s on e.sektor=s.id_sektora
 group by w.id_wyprawy
 having liczenie<400;
 
+#4.2
+select w.nazwa,sum(e.ilosc*z.waga), count(u.id_uczestnika) from uczestnicy u
+left join wyprawa w on w.id_wyprawy=u.id_wyprawy
+left join ekwipunek e on e.idKreatury=u.id_uczestnika
+left join zasob z on z.idZasobu=e.idZasobu
+left join kreatura k on k.idKreatury=u.id_uczestnika
+group by w.id_wyprawy;
+
+#5.1
+
+select datediff(curdate(), dataUr) from kratura;
+
+select bas(datediff(DataUr,curdate())) from kreatura;
 
 
