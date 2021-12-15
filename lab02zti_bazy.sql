@@ -8,3 +8,4 @@ select * from pracownik where pensja between 3500 AND 5000;
 select * from stan_magazynowy where ilosc>10 ;
 #zad5
 select * from towar where  (nazwa_towaru LIKE'A%' OR nazwa_towaru LIKE'B%' OR nazwa_towaru LIKE  'C%');
+#zad6
