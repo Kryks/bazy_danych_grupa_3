@@ -68,3 +68,15 @@ right join dzial d on p.dzial=d.id_dzialu;
 
 insert into pracownik (id_pracownika, imie,nazwisko,data_urodzenia,stanowisko,pensja) values
 (3,'Michal','kefir','1999-02-03','magazynier',800);
+
+use wikingowie;
+
+show tables;
+
+select  AVG(waga) from kreatura;
+
+select rodzaj,AVG(waga) from kreatura
+group by rodzaj;
+
+select rodzaj,AVG(waga) from kreatura
+where rodzaj='wiking';
